@@ -15,7 +15,7 @@ db
 
 ![image](https://user-images.githubusercontent.com/54609399/138027987-f4ca5f94-34de-409e-a709-d4ab6b87aaa8.png)
 
-3 - Crear y/o usar una DB
+3 - Crear y/o usar una DB, y luego comprobamos si en verdad estamos ubicados en la DB con el comando db
 
 ```
 use pruebadb
@@ -23,7 +23,7 @@ use pruebadb
 
 ![image](https://user-images.githubusercontent.com/54609399/138027109-18967b6b-2b03-429b-9e1b-41c8c00b933d.png)
 
-2 - la bd no se puede eliminar porque no existe aun
+4 - La DB no se puede eliminar porque no existe aun
 
 ![image](https://user-images.githubusercontent.com/54609399/138027141-7279b294-9cb6-4dad-aaf5-1ebac5e7fad7.png)
 
