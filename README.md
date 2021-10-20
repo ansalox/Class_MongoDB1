@@ -23,29 +23,57 @@ use pruebadb
 
 ![image](https://user-images.githubusercontent.com/54609399/138027109-18967b6b-2b03-429b-9e1b-41c8c00b933d.png)
 
-4 - La DB no se puede eliminar porque no existe aun
+4 - La DB no se puede eliminar porque no existe aun, para que MongoDB la ponga existente se le debe crear una colección primero
+
+```
+db.dropDatabase()
+```
 
 ![image](https://user-images.githubusercontent.com/54609399/138027141-7279b294-9cb6-4dad-aaf5-1ebac5e7fad7.png)
 
-3 - crear una colección
+5 - Crear una colección en una DB, podemos ver las colecciones que tengamos con el comando show collections
+
+```
+db.createCollection("user")
+```
+
+```
+db.createCollection("item")
+```
+
+```
+show.collections
+```
 
 ![image](https://user-images.githubusercontent.com/54609399/138027191-ff790bbc-8665-47a1-b33d-7976f0a9356b.png)
 
-4 - Eliminar correctamente BD
+6 - Eliminar coleccion
 
-![image](https://user-images.githubusercontent.com/54609399/138027224-f959b325-7801-4709-9933-b83a9d023ff8.png)
-
-5 - Eliminar coleccion
+```
+db.item.drop()
+```
 
 ![image](https://user-images.githubusercontent.com/54609399/138027255-6fd7e6c0-9354-4d55-b68f-bccebd0f86a5.png)
 
-6 - Cambiar nombre de una colección
+7 - Eliminar correctamente una DB, ahora que la DB ya tiene colecciones podemos eliminarla
+
+```
+db.dropDatabase()
+```
+
+![image](https://user-images.githubusercontent.com/54609399/138030580-2eebbf1e-816a-467b-9e6d-174fcd6a1569.png)
+
+8 - Cambiar nombre de una colección (Para este paso necesitamos crear otra vez pruebadb y sus colecciones user e item)
+
+```
+db.["user"].renameCollection("userapp")
+```
 
 ![image](https://user-images.githubusercontent.com/54609399/138027304-7f7112b8-10a6-4be8-8b44-53329a03e1b4.png)
 
 ![image](https://user-images.githubusercontent.com/54609399/138027331-7f82b8f9-c8bb-4814-aeb4-76cc655e738e.png)
 
-7 - hacer backup de mongo
+**** COMO HACER BACKUP DE BASES DE DATOS EN MONGODB ****
 
 crear carpeta de backup y escribir comando mongodum
 
