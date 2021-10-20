@@ -1,12 +1,16 @@
 # Class_MongoDB
 
-Para ver todas las bases de datos
+1 - Para ver todas las bases de datos que tenemos en MongoDB
 
+```
 show dbs
+```
 
-ver bd actual
+2 - Ver la DB actual en la que estamos posicionados
 
+```
 db
+```
 
 ![image](https://user-images.githubusercontent.com/54609399/138027987-f4ca5f94-34de-409e-a709-d4ab6b87aaa8.png)
 
