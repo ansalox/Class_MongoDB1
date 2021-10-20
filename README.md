@@ -5,6 +5,7 @@
 ```
 show dbs
 ```
+![image](https://user-images.githubusercontent.com/54609399/138028777-2c4971fe-679e-4cfb-8666-cba56611f2a7.png)
 
 2 - Ver la DB actual en la que estamos posicionados
 
@@ -14,16 +15,11 @@ db
 
 ![image](https://user-images.githubusercontent.com/54609399/138027987-f4ca5f94-34de-409e-a709-d4ab6b87aaa8.png)
 
+3 - Crear y/o usar una DB
 
-
-algunos comandos utiles en mongodb
-
-db.help()
-
-
-1 - crear y/o usar una db
-
-> use pruebadb
+```
+use pruebadb
+```
 
 ![image](https://user-images.githubusercontent.com/54609399/138027109-18967b6b-2b03-429b-9e1b-41c8c00b933d.png)
 
