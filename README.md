@@ -1,5 +1,22 @@
 # Class_MongoDB
 
+Para ver todas las bases de datos
+
+show dbs
+
+ver bd actual
+
+db
+
+![image](https://user-images.githubusercontent.com/54609399/138027987-f4ca5f94-34de-409e-a709-d4ab6b87aaa8.png)
+
+
+
+algunos comandos utiles en mongodb
+
+db.help()
+
+
 1 - crear y/o usar una db
 
 > use pruebadb
