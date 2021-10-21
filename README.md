@@ -77,13 +77,6 @@ Dentro de esa BD si le damos click podemos ver que hay una coleccion user
 
 ![image](https://user-images.githubusercontent.com/54609399/138151908-ca2a7f0c-3f60-4336-ac0d-9b3d85e4fbe4.png)
 
-Si refrescamos el compas podemos ver tambien la BD creada desde la consola
-
-![image](https://user-images.githubusercontent.com/54609399/138193386-1b829b6f-e378-4ff4-9dc4-34eb3119ea3c.png)
-
-y si usamos el comando show dbs en la consola vemos tambien las dos DB 
-
-![image](https://user-images.githubusercontent.com/54609399/138193609-80da1840-c33a-4a21-9247-460ee965c6ec.png)
 
 
 4 - ya creamos DB en consola y en compas ahora vamos a ver como se eliminan pero resulta que en consola La DB no se puede eliminar porque no existe aun ya que no se le creo una coleccion como en compass, para que MongoDB la ponga existente se le debe crear una colección primero sino queda como fantasma intentemos eliminarla usando el siguiente comando y veremos que sigue quedando si usamos el comando db
@@ -124,6 +117,13 @@ En compass podemos ya ver en la lista de colecciones de la DB exampledb que esta
 
 ![image](https://user-images.githubusercontent.com/54609399/138152354-cab4b5fe-0a9e-4a2a-ab4d-54685299f3b6.png)
 
+Si refrescamos el compas podemos ver tambien la BD creada desde la consola
+
+![image](https://user-images.githubusercontent.com/54609399/138193386-1b829b6f-e378-4ff4-9dc4-34eb3119ea3c.png)
+
+y si usamos el comando show dbs en la consola vemos tambien las dos DB 
+
+![image](https://user-images.githubusercontent.com/54609399/138193609-80da1840-c33a-4a21-9247-460ee965c6ec.png)
 
 6 - Eliminar coleccion en consola (Ahora si podemos porque ya no es un fantasma), luego de eliminar podemos ver las colecciones y no deberia de aparecer
 
