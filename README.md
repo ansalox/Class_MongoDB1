@@ -8,7 +8,7 @@ nos ubicmaos en la de mongo que es el cliente
 
 ![image](https://user-images.githubusercontent.com/54609399/138191271-1236b65d-32f8-4921-948a-a92e23a39239.png)
 
-tambien vamos a bir y tener listo compass, para esto ejecutamos la aplicacion en caso que la hayan cerrado y la dejamos lista
+tambien vamos abrir y tener listo compass, para esto ejecutamos la aplicacion en caso que la hayan cerrado y la dejamos lista
 
 ![image](https://user-images.githubusercontent.com/54609399/138191350-389e43d7-ab59-4286-b132-a9ddef37ee09.png)
 
@@ -69,11 +69,11 @@ Debemos poner el nombre de la DB y crearle una coleccion inicial obligatoriament
 
 ![image](https://user-images.githubusercontent.com/54609399/138151803-4d83f266-0f5a-499a-9491-3fd24986e813.png)
 
-YA podemos ver la BD creada en la lista de bases de datos
+YA podemos ver la BD creada en la lista de bases de datos (sinos fijamos no sale pruebadb que fue la que creamos en consola)
 
 ![image](https://user-images.githubusercontent.com/54609399/138151863-3f557884-2164-4b20-9865-1d4fbb21249d.png)
 
-Dentro de esa BD si le damos click podemos ver que hay una coleccion user
+Dentro de exampleDB  si le damos click podemos ver que hay una coleccion user
 
 ![image](https://user-images.githubusercontent.com/54609399/138151908-ca2a7f0c-3f60-4336-ac0d-9b3d85e4fbe4.png)
 
@@ -137,7 +137,11 @@ Eliminar en compass
 
 ![image](https://user-images.githubusercontent.com/54609399/138152595-dc3eaed1-5f2b-40cd-8f0d-530726c17b59.png)
 
+Nos pide por seguridad escribir el nombre de la coleccion para saber que no es un kacker o un scropt ejecutandose malisioso
+
 ![image](https://user-images.githubusercontent.com/54609399/138152642-3c2a52ce-364f-42cb-a738-bccdc2401a2b.png)
+
+Podemos ver que ya se elimino la coleccion
 
 ![image](https://user-images.githubusercontent.com/54609399/138152693-144ed89d-0de3-4c9c-a765-d4023f04ef74.png)
 
@@ -148,18 +152,27 @@ Eliminar en compass
 db.dropDatabase()
 ```
 
-![image](https://user-images.githubusercontent.com/54609399/138030580-2eebbf1e-816a-467b-9e6d-174fcd6a1569.png)
+![image](https://user-images.githubusercontent.com/54609399/138196099-ef89f1a8-e216-430d-ab17-082c2524604a.png)
 
-En compass
+si suamos el comando show dbs podeos ver que ya no esta la DB
+
+![image](https://user-images.githubusercontent.com/54609399/138196239-0851ddc3-6974-4e24-b092-81a643592a4d.png)
+
+
+Para eliminar una DB en compass
 
 ![image](https://user-images.githubusercontent.com/54609399/138152917-fe5f26b3-ee4c-4cef-8fe6-5c6c8fa8ecc5.png)
 
+Por seguridad nos pide el nombre de la DB
+
 ![image](https://user-images.githubusercontent.com/54609399/138153036-24d44fbf-381a-4ee8-8443-6c1018cb4b3d.png)
+
+verificamos que no este ya la DB en compass
 
 ![image](https://user-images.githubusercontent.com/54609399/138153081-52a13302-f86c-461d-a3dd-3e9438140f17.png)
 
 
-8 - Cambiar nombre de una colección (Para este paso necesitamos crear otra vez pruebadb y sus colecciones user e item)
+8 - Cambiar nombre de una colección (Para este paso necesitamos crear otra vez pruebadb y sus colecciones user e item tambien la de compass exampleDB y sus colecciones user e item)
 
 ```
 db.["user"].renameCollection("userapp")
@@ -167,9 +180,8 @@ db.["user"].renameCollection("userapp")
 
 ![image](https://user-images.githubusercontent.com/54609399/138027304-7f7112b8-10a6-4be8-8b44-53329a03e1b4.png)
 
-![image](https://user-images.githubusercontent.com/54609399/138027331-7f82b8f9-c8bb-4814-aeb4-76cc655e738e.png)
 
-En compass no se puede editar el nombre de las colecciones.
+En compass no se puede editar el nombre de las colecciones 
 
 NOTA: el nombre de las bases de datos no se pueden editar ni en compass ni en consola
 
@@ -183,15 +195,15 @@ seleccionamos add data
 
 ![image](https://user-images.githubusercontent.com/54609399/138153775-9a8960c5-d235-4375-b346-805038542027.png)
 
+Damos click en insert document
+
 ![image](https://user-images.githubusercontent.com/54609399/138153852-aea13e09-b3f1-471d-b476-09cb755e8871.png)
 
-Tenemos dos formas de crear documentos seleciconamos la segunda 
-
-![image](https://user-images.githubusercontent.com/54609399/138153887-92c01d75-e430-435c-839f-7635ae3303aa.png)
+Seleccionamos la siguiente opcion
 
 ![image](https://user-images.githubusercontent.com/54609399/138153977-5f9875d9-f93a-4063-97fd-c6d0e08910df.png)
 
-siempre genera un ID por defecto
+siempre genera un ID por defecto no se debe eliminar esto es lo que identifica cada documento de mongo como unico para mongo se llaman ObjetID
 
 ![image](https://user-images.githubusercontent.com/54609399/138154055-696a9374-92b2-4c48-a7fe-b22c2f722b4a.png)
 
@@ -201,20 +213,32 @@ insertamos un nuevo campo con el +
 
 ![image](https://user-images.githubusercontent.com/54609399/138154218-118597b9-543f-4f25-b711-e065827e89a2.png)
 
+Escribirmos en la primer aparte el nombre de la propiedad como name y en la segunda parte el nombre del valor ejemplo Pepe, si nos fijamos a la derecha sale el tipo de dato
+
 ![image](https://user-images.githubusercontent.com/54609399/138154256-215896e2-3d2d-4574-9119-f531bad9a386.png)
+
+Ahora vamos a crear otro campo desde el mas ojo si le dan a la X eliminan el commpo creamos el campo age de edad y le ponemos 25
 
 ![image](https://user-images.githubusercontent.com/54609399/138154296-4e0c8d01-6ae0-46b0-9232-41f1553f6b02.png)
 
+a la derecha seleccionamos int64 sigifica que es tipo entero y de 64 bits osea mas optimo que el de 32 que es versiones viejas
 
 ![image](https://user-images.githubusercontent.com/54609399/138154364-495632f2-0fc8-42ef-bede-994230c9eb6e.png)
+
+Para finalizar le damos inset y ya tendiramos un documento creado nuestro primer registro que es un JSON
 
 ![image](https://user-images.githubusercontent.com/54609399/138154419-f0fdb554-fb8e-4e51-8bcf-edd9d9e123a8.png)
 
 ![image](https://user-images.githubusercontent.com/54609399/138154478-7a7342e8-e1d3-4803-925a-aeb6392b6c34.png)
 
+Podemos hacer lo que queramos con los documentos. editarlos o eliminarlos o copiarlos desde las siguientes opciones
+
+![image](https://user-images.githubusercontent.com/54609399/138197536-7300fa22-80c9-4864-876a-8ef3e55fe116.png)
 
 
 **** COMO HACER BACKUP DE BASES DE DATOS EN MONGODB POR CONSOLA ****
+
+![image](https://user-images.githubusercontent.com/54609399/138027331-7f82b8f9-c8bb-4814-aeb4-76cc655e738e.png)
 
 crear carpeta de backup y escribir comando mongodum
 
