@@ -1,5 +1,35 @@
 # Class_MongoDB
 
+una vez instalado podemos empezar a trabajar con mongo DB
+
+para ello vamos a las consolas que teniamos abiertas mongo y mongod
+
+nos ubicmaos en la de mongo que es el cliente
+
+![image](https://user-images.githubusercontent.com/54609399/138191271-1236b65d-32f8-4921-948a-a92e23a39239.png)
+
+tambien vamos a bir y tener listo compass, para esto ejecutamos la aplicacion en caso que la hayan cerrado y la dejamos lista
+
+![image](https://user-images.githubusercontent.com/54609399/138191350-389e43d7-ab59-4286-b132-a9ddef37ee09.png)
+
+tenemos que entrar a las BD en compass y lo hacemos de la siguiente manera
+vamos a la consola mongo y copiamos la siguiente linea usando ctrl + shift + c, ya que si usamos ctrl + c no copia nada
+
+![image](https://user-images.githubusercontent.com/54609399/138191465-cfc96b70-fe33-4e32-b610-144d64ea0581.png)
+
+mongodb://127.0.0.1:27017/
+
+pegamos esta lina en el compas en la siguiente parte y damos conectar (importante copiar toda la linea hasta el ultimo slash)
+
+![image](https://user-images.githubusercontent.com/54609399/138191539-680a736f-3a7b-499f-87d0-16708676f09f.png)
+
+una vez conecte nos saldra lo siguiente
+
+![image](https://user-images.githubusercontent.com/54609399/138191609-22df5976-dbad-4d8d-881e-f322a8b97b74.png)
+
+con esto estamos listos para continuar
+
+
 1 - Para ver todas las bases de datos que tenemos en MongoDB en consola
 
 ```
