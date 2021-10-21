@@ -65,26 +65,38 @@ En Compass hacemos el siguiente proceso:
 
 ![image](https://user-images.githubusercontent.com/54609399/138151568-b27df352-6e29-40b3-a74a-24921e26cffc.png)
 
-Debemos poner el nombre de la DB y crearle una coleccion inicial obligatoriamente, no seleccionamos ninguno de los check ya que son plantillas con cosas creadas por defecto que no necesitamos.
+Debemos poner el nombre de la DB y crearle una coleccion inicial obligatoriamente si las BD no tienen una coleccion esa BD no existe, no seleccionamos ninguno de los check ya que son plantillas con cosas creadas por defecto que no necesitamos.
 
 ![image](https://user-images.githubusercontent.com/54609399/138151803-4d83f266-0f5a-499a-9491-3fd24986e813.png)
 
+YA podemos ver la BD creada en la lista de bases de datos
+
 ![image](https://user-images.githubusercontent.com/54609399/138151863-3f557884-2164-4b20-9865-1d4fbb21249d.png)
+
+Dentro de esa BD si le damos click podemos ver que hay una coleccion user
 
 ![image](https://user-images.githubusercontent.com/54609399/138151908-ca2a7f0c-3f60-4336-ac0d-9b3d85e4fbe4.png)
 
+Si refrescamos el compas podemos ver tambien la BD creada desde la consola
 
-4 - La DB no se puede eliminar en consola porque no existe aun, para que MongoDB la ponga existente se le debe crear una colección primero
+![image](https://user-images.githubusercontent.com/54609399/138193386-1b829b6f-e378-4ff4-9dc4-34eb3119ea3c.png)
+
+y si usamos el comando show dbs en la consola vemos tambien las dos DB 
+
+![image](https://user-images.githubusercontent.com/54609399/138193609-80da1840-c33a-4a21-9247-460ee965c6ec.png)
+
+
+4 - ya creamos DB en consola y en compas ahora vamos a ver como se eliminan pero resulta que en consola La DB no se puede eliminar porque no existe aun ya que no se le creo una coleccion como en compass, para que MongoDB la ponga existente se le debe crear una colección primero sino queda como fantasma intentemos eliminarla usando el siguiente comando y veremos que sigue quedando si usamos el comando db
 
 ```
 db.dropDatabase()
 ```
 
-![image](https://user-images.githubusercontent.com/54609399/138027141-7279b294-9cb6-4dad-aaf5-1ebac5e7fad7.png)
+![image](https://user-images.githubusercontent.com/54609399/138192774-4e957cd4-bcaf-48e5-8c14-04dbc843bb8a.png)
 
-En compass esto no pasa porque nos obliga a crear una coleccion para poder crear una DB
+En compass esto no pasa porque nos obliga a crear una coleccion para poder crear una DB entonces en compass por eso si existe
 
-5 - Crear una colección en una DB en consola, podemos ver las colecciones que tengamos con el comando show collections
+5 - Ahora vamos a crear una colección en una DB en consola con esto ya existiria la DB y dejaria de ser fantasma, podemos ver las colecciones que tengamos con el comando show collections
 
 ```
 db.createCollection("user")
@@ -104,12 +116,16 @@ Para crear otra coleccion en Compass, realizamos el siguiente paso:
 
 ![image](https://user-images.githubusercontent.com/54609399/138152247-ca01f5e7-1791-44c8-82ca-cc6a70d2458b.png)
 
+Ponemos el nombre de la coleccion pero no seleccionamos ningun check porque nos genera codigo que no nos sirve y nos puede afectar la DB
+
 ![image](https://user-images.githubusercontent.com/54609399/138152290-e5d5abcc-250e-4ec4-853a-22d89e73a757.png)
+
+En compass podemos ya ver en la lista de colecciones de la DB exampledb que esta l anueva coleccion
 
 ![image](https://user-images.githubusercontent.com/54609399/138152354-cab4b5fe-0a9e-4a2a-ab4d-54685299f3b6.png)
 
 
-6 - Eliminar coleccion en consola
+6 - Eliminar coleccion en consola (Ahora si podemos porque ya no es un fantasma), luego de eliminar podemos ver las colecciones y no deberia de aparecer
 
 ```
 db.item.drop()
